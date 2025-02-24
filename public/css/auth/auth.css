@@ -1,0 +1,135 @@
+/* ========================== */
+/*       RESET & GERAL       */
+/* ========================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #efefef, #dedede);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ========================== */
+/*       CONTAINER & CARD      */
+/* ========================== */
+.login-container {
+    width: 100%;
+    max-width: 500px; /* largura maior para os formulários */
+    margin: auto;
+}
+
+.login-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================== */
+/*         TIPOGRAFIA        */
+/* ========================== */
+.login-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ========================== */
+/*          FORMULÁRIO       */
+/* ========================== */
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.login-card label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.login-card input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* ========================== */
+/*           BOTÃO           */
+/* ========================== */
+.login-card button {
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.login-card button:hover {
+    background: #0056b3;
+    transform: scale(1.03);
+}
+
+/* ========================== */
+/*         LINKS & ALERTAS   */
+/* ========================== */
+.login-card .register-link {
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-card .register-link:hover {
+    text-decoration: underline;
+}
+
+.alert-success, 
+.alert-danger {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
