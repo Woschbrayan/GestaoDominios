@@ -4,7 +4,7 @@
     <div class="login-card">
         <h2>Cadastro</h2>
 
-        {{-- Exibe erros de validação --}}
+       
         @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
@@ -15,7 +15,7 @@
             </div>
         @endif
 
-        {{-- Exibe mensagem de sucesso, se houver --}}
+   
         @if (session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}

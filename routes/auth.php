@@ -15,8 +15,6 @@ Route::get('/register', function () {
 });
 Route::post('/register', [AuthController::class, 'register']);
 
-// Rota para exibir o formulário de login (método GET)
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 
-// Rota para processar o login (método POST)
 Route::post('/login', [AuthController::class, 'login']);

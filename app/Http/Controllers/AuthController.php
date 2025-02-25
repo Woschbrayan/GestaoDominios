@@ -50,7 +50,7 @@ class AuthController extends Controller
     }
     public function showLoginForm()
 {
-    return view('auth.login'); // Certifique-se de que a view resources/views/auth/login.blade.php exista
+    return view('auth.login'); 
 }
 
     

@@ -4,14 +4,14 @@
     <div class="login-card">
         <h2>Login</h2>
         
-        {{-- Exibe mensagem de sucesso se houver --}}
+    
         @if (session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
             </div>
         @endif
 
-        {{-- Exibe mensagem de erro se houver --}}
+   
         @if (session('error'))
             <div class="alert alert-danger">
                 {{ session('error') }}
